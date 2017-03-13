@@ -23,3 +23,4 @@ Documentation
 Example
 -------
 
+[![Coverage Status](https://coveralls.io/repos/github/RainZhang94/sesame-paste-noodle/badge.svg?branch=master)](https://coveralls.io/github/RainZhang94/sesame-paste-noodle?branch=master)
