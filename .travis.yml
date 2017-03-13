@@ -24,7 +24,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - coverage run --source=pytest smoke.py test
+  - coverage run --source=setup.py test
 
 after_success:
   - coveralls
