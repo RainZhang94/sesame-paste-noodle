@@ -24,7 +24,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - py.test --cov=mlbase/tests/*
+  - py.test --runslow --cov-config=mlbase/tests/*
 
 after_success:
   - coveralls
