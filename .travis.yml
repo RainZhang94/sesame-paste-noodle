@@ -25,7 +25,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - coverage run mlbase/tests/test_sgd_opt.py
+  - coverage run setup.py
 
 after_success:
   - codecov
