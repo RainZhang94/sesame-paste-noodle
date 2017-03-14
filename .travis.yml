@@ -24,7 +24,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - coverage run --source=pytest test_sgd_opt.py test
+  - coverage run --source=sesame-paste-noodle setup.py test
 
 after_success:
   - coveralls
