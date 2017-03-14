@@ -25,7 +25,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - coverage run setup.py
+  - coverage run mlbase/test/*
 
 after_success:
   - codecov
