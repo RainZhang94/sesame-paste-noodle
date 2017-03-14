@@ -19,12 +19,12 @@ install:
   - /usr/bin/g++ --version
   - pip install -r requirement.txt
   - pip install coverage
-  - pip install coveralls
+  - pip install python-coveralls
   - pip install -e .
 
 script:
   - pytest mlbase/tests
-  - coverage run --source=sesame-paste-noodle setup.py test
+  - py.test --cov=mlbase/tests/*
 
 after_success:
   - coveralls
