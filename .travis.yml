@@ -20,14 +20,15 @@ install:
   - pip install -r requirement.txt
   - pip install coverage
   - pip install python-coveralls
+  - pip install codecov
   - pip install -e .
 
 script:
   - pytest mlbase/tests
-  - py.test --runslow --cov-config=mlbase/tests/*
+  - coverage run mlbase/tests/test_sgd_opt.py
 
 after_success:
-  - coveralls
+  - codecov
 
 cache:
   - apt
