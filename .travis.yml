@@ -28,7 +28,6 @@ script:
   - coverage run mlbase/tests/smoke.py
 
 after_success:
-  - coveralls
   - codecov
 
 cache:
