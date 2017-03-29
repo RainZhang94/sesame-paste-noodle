@@ -149,7 +149,7 @@ def test_globalpooling():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -186,7 +186,7 @@ def test5():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -228,7 +228,7 @@ def testbn():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -267,7 +267,7 @@ def test():
 
     print(network)
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
     
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -304,7 +304,7 @@ def test4():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -342,7 +342,7 @@ def test3():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -454,7 +454,7 @@ def test1():
 
     network.build()
 
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)

@@ -26,7 +26,7 @@ install:
 script:
   - pytest mlbase/tests
   - py.test --runslow --cov-config=.coveragerc
-  - coverage run mlbase/tests/*
+  - coverage run mlbase/tests/smoke.py
 
 after_success:
   - coveralls

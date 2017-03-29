@@ -7,7 +7,7 @@ import tarfile
 import scipy.io
 
 def load_mnist():
-    f = h5py.File('/hdd/home/yueguan/workspace/data/mnist/mnist.hdf5', 'r')
+    f = h5py.File('/home/rain/workspace/data/mnist.hdf5', 'r')
 
     trX = f['x_train'][:,:].reshape(-1, 1, 28, 28)
     teX = f['x_test'][:,:].reshape(-1, 1, 28, 28)
@@ -122,7 +122,7 @@ def load_timofte():
         img = np.rollaxis(img, 2)
 
 def load_kaggle_ultrasound():
-    datapath = '/hdd/home/largedata/ultrasound/ultrasound.hdf5'
+    datapath = '/home/rain/workspace/data/ultrasound.hdf5'
 
     h5f = h5py.File(datapath, 'r')
     trX = h5f['trX']
