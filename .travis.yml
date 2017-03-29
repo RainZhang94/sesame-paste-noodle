@@ -25,7 +25,7 @@ install:
 
 script:
   - pytest mlbase/tests
-  - coverage run mlbase/tests/smoke.py
+ - coverage run mlbase/tests/test_networkhelper.py
 
 after_success:
   - codecov
