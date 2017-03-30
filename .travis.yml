@@ -25,9 +25,11 @@ install:
 
 script:
   - pytest mlbase/tests
- - coverage run mlbase/tests/test_networkhelper.py
+  - py.test --cov-report= --cov=sesame-paste-noodle mlbase/tests/
+  - coverage run mlbase/tests/test_networkhelper.py
 
 after_success:
+  - coveralls
   - codecov
 
 cache:
