@@ -24,7 +24,7 @@ install:
   - pip install -e .
 
 script:
-  - py.test --runslow --cov-config=.coveragerc
+  - py.test --cov-config=.coveragerc
   - py.test --cov-report xml:coverage.xml
 
 after_success:
