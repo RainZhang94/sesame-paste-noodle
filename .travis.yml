@@ -24,7 +24,7 @@ install:
   - pip install -e .
 
 script:
-  - coverage run --config=.coveragerc
+  - coverage run --source=.coveragerc --omit=.coveragerc
   - coverage xml
 
 after_success:
