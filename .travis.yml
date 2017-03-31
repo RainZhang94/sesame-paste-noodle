@@ -24,7 +24,7 @@ install:
   - pip install -e .
 
 script:
-  - py.test --cov-config=.coveragerc
+  - coverage run mlbase/tests/test_generative.py
 
 after_success:
   - coveralls
