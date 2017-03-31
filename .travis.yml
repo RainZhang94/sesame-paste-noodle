@@ -24,8 +24,8 @@ install:
   - pip install -e .
 
 script:
-  - py.test --cov-report= --cov=sesame-paste-noodle mlbase/tests/
-  - coverage xml
+  - py.test --runslow --cov-config=.coveragerc
+  - py.test --cov-report xml:coverage.xml
 
 after_success:
   - coveralls
