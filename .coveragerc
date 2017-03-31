@@ -1,6 +1,3 @@
 [run]
 omit = mlbase/tests/*
 source = mlbase/*
-
-[report]
-xml
