@@ -24,7 +24,8 @@ install:
   - pip install -e .
 
 script:
-  - coverage run mlbase/tests/*
+  - coverage run --config=.coveragerc
+  - coverage xml
 
 after_success:
   - coveralls
