@@ -25,7 +25,6 @@ install:
 
 script:
   - py.test --cov-config=.coveragerc
-  - py.test --cov-report xml:coverage.xml
 
 after_success:
   - coveralls
