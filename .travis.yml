@@ -24,7 +24,7 @@ install:
   - pip install -e .
 
 script:
-  - coverage run mlbase/tests/test_networkhelper.py
+  - coverage run mlbase/tests/*
 
 after_success:
   - coveralls
