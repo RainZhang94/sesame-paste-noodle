@@ -1,4 +1,3 @@
 [run]
-omit = mlbase/tests/*
-[paths]
-source = mlbase/*
+    omit = mlbase/tests/*
+    source = mlbase/*
