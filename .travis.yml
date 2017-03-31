@@ -24,7 +24,7 @@ install:
   - pip install -e .
 
 script:
-  - coverage run --source=.coveragerc --omit=.coveragerc
+  - py.test --cov-report= --cov=sesame-paste-noodle mlbase/tests/
   - coverage xml
 
 after_success:
