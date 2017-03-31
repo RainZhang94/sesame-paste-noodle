@@ -1,3 +1,6 @@
 [run]
     omit = mlbase/tests/*
     source = mlbase/*
+
+[report]
+output = "coverage.xml"
